@@ -31,3 +31,5 @@ str1 = "abad"
 str2 = "abac"
  
 print(editDistDP(str1, str2, len(str1), len(str2)))
+
+#output- 1
