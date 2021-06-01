@@ -121,6 +121,11 @@ db=sqlite3.connect("test.db")
 rs=db.execute("SELECT * from resultss")
 for row in rs:
   print(row)
+#output
+#('ashu', '2', 'a', '90', '92', '95', '88', '89', '90')
+#('riyansh', '2', 'a', '92', '96', '99', '88', '89', '90')
+#('riyanshi', '2', 'a', '82', '96', '97', '98', '89', '90')
+
 
 mycursor = db.cursor()
 
@@ -131,3 +136,4 @@ mycursor.execute(sql)
 db.commit()
 
 print(mycursor.rowcount, "updated")
+#updated
