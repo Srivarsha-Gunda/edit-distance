@@ -30,3 +30,4 @@ if __name__ == "__main__" :
     n = len(arr);
      
     print(maxWater(arr, n));
+#output - 6
