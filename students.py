@@ -12,6 +12,7 @@ except:
   print("already ")
 
 db=sqlite3.connect("test.db")
+#table created
 
 name="ashu"
 Class ="2"
@@ -75,6 +76,13 @@ db=sqlite3.connect("test.db")
 rs=db.execute("SELECT * from resultss")
 for row in rs:
   print(row)
+#output
+#('ashu', '2', 'a', '90', '92', '95', '88', '89', '90')
+#('riya', '2', 'a', '99', '96', '97', '88', '89', '90')
+#('riyansh', '2', 'a', '92', '96', '97', '88', '89', '90')
+#('riyanshi', '2', 'a', '82', '96', '97', '98', '89', '90')
+
+
 
 mycursor = db.cursor()
 
@@ -85,11 +93,18 @@ mycursor.execute(sql)
 db.commit()
 
 print(mycursor.rowcount, "record(s) deleted")
+# row deleted
 
 db=sqlite3.connect("test.db")
 rs=db.execute("SELECT * from resultss")
 for row in rs:
   print(row)
+#output
+#('ashu', '2', 'a', '90', '92', '95', '88', '89', '90')
+#('riyansh', '2', 'a', '92', '96', '97', '88', '89', '90')
+#('riyanshi', '2', 'a', '82', '96', '97', '98', '89', '90')
+
+
 
 mycursor = db.cursor()
 
@@ -100,6 +115,7 @@ mycursor.execute(sql)
 db.commit()
 
 print(mycursor.rowcount, "updated")
+#updated
 
 db=sqlite3.connect("test.db")
 rs=db.execute("SELECT * from resultss")
