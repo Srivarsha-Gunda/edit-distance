@@ -1,4 +1,7 @@
 #students
+
+
+
 1. In the IIIT Summer internship there are 4 students. Add these 4 students to the database (MySQL). After two weeks 1 student want to drop from the team. Please write program to design and implement the following functionality 
     Students should have the following properties
     Student Id, Name, class, section, marks (by subject )
@@ -13,6 +16,9 @@ Teacher functionality
 
 
 #trap-raining
+
+
+
 2.Given an integer array A of non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
 Problem Constraint
@@ -37,6 +43,9 @@ Output 1
 0
 .........................................................................
 #edit-distance
+
+
+
 3.Given two strings A and B, find the minimum number of steps required to convert A to B. (each operation is counted as 1 step.)
 You have the following 3 operations permitted on a word:
 
